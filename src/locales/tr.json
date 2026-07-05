@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "Günce"
+  },
+  "common": {
+    "refresh": "Yenile",
+    "offline": "Çevrimdışısınız",
+    "staleData": "Çevrimdışı — son bilinen veriler gösteriliyor"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "prayerTimes": "Namaz Vakitleri",
+    "weather": "Hava Durumu",
+    "currency": "Döviz",
+    "sports": "Spor",
+    "settings": "Ayarlar"
+  },
+  "location": {
+    "label": "Devam etmek için bir konum seçin",
+    "useGps": "Konumumu Kullan",
+    "cityPlaceholder": "Şehir adı girin (örn. İstanbul)",
+    "search": "Ara"
+  },
+  "home": {
+    "comingSoon": "Yakında",
+    "weather": "Hava Durumu",
+    "currency": "Döviz",
+    "sports": "Spor",
+    "pharmacy": "Nöbetçi Eczane",
+    "prayerTimesCard": "Namaz Vakitleri"
+  },
+  "prayerTimes": {
+    "title": "Namaz Vakitleri",
+    "fajr": "İmsak",
+    "sunrise": "Güneş",
+    "dhuhr": "Öğle",
+    "asr": "İkindi",
+    "maghrib": "Akşam",
+    "isha": "Yatsı",
+    "next": "Sıradaki vakit",
+    "error": "Namaz vakitleri alınamadı"
+  },
+  "weather": {
+    "title": "Hava Durumu",
+    "humidity": "Nem",
+    "wind": "Rüzgar",
+    "error": "Hava durumu alınamadı",
+    "conditions": {
+      "clear": "Açık",
+      "partlyCloudy": "Parçalı Bulutlu",
+      "cloudy": "Bulutlu",
+      "fog": "Sisli",
+      "drizzle": "Çisenti",
+      "rain": "Yağmurlu",
+      "snow": "Karlı",
+      "showers": "Sağanak Yağışlı",
+      "thunderstorm": "Gök Gürültülü Fırtına",
+      "unknown": "Bilinmiyor"
+    }
+  },
+  "currency": {
+    "title": "Döviz Kurları",
+    "baseNote": "1 birim karşılığı Türk Lirası",
+    "error": "Döviz kurları alınamadı",
+    "alertLabel": "Bildirim eşiği (₺)",
+    "alertSet": "Eşik ayarlandı",
+    "codes": {
+      "USD": "Amerikan Doları",
+      "EUR": "Euro",
+      "GBP": "İngiliz Sterlini"
+    }
+  },
+  "sports": {
+    "title": "Spor",
+    "teamPlaceholder": "Takım adı girin (örn. Galatasaray)",
+    "search": "Ara",
+    "noTeam": "Favori takımınızı seçin",
+    "lastMatch": "Son Maç",
+    "nextMatch": "Sıradaki Maç",
+    "noData": "Veri bulunamadı"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "theme": "Tema",
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem",
+    "language": "Dil",
+    "updates": "Güncellemeler",
+    "checkForUpdates": "Güncellemeleri Kontrol Et",
+    "updateAvailable": "Yeni sürüm mevcut: {version}",
+    "install": "Kur ve Yeniden Başlat"
+  },
+  "notifications": {
+    "prayerTime": "{prayer} vakti girdi",
+    "currencyThreshold": "{code} kuru {threshold}₺ eşiğini geçti (şu an {rate}₺)",
+    "matchStarting": "{home} - {away} maçı başlıyor"
+  }
+}

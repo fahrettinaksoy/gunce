@@ -1,0 +1,52 @@
+name: Android Build
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Install NDK
+        run: sdkmanager --install "ndk;27.0.12077973"
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workingDirectory: src-tauri
+
+      - run: npm ci
+
+      # NOT: Play Store'a yayınlamak için imzalı bir release AAB gerekir. Bu, bir
+      # keystore oluşturup gen/android/app/build.gradle.kts içinde signingConfig
+      # tanımlamayı gerektirir — henüz bir keystore olmadığından bu adım şimdilik
+      # imzasız (debug) derliyor, doğrulama/dahili test amaçlı.
+      - name: Build Android (debug)
+        run: npm run tauri android build -- --debug
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gunce-android-debug
+          path: |
+            src-tauri/gen/android/app/build/outputs/apk/**/*.apk
+            src-tauri/gen/android/app/build/outputs/bundle/**/*.aab

@@ -1,0 +1,11 @@
+/* Tauri'nin WebView motorları (WebView2/WKWebView/WebKitGTK/Android WebView) hepsi woff2
+   destekliyor; @mdi/font'un varsayılan CSS'i eot/woff/ttf fallback'lerini de içerip
+   ~3.2MB gereksiz font ikilisini paketliyor. Bu dosya sadece woff2'yi tanımlar;
+   ikon-glif eşlemeleri materialdesignicons-icons.css içinde (font-face'siz) ayrı tutulur. */
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("./materialdesignicons-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

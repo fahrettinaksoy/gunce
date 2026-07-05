@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "Günce"
+  },
+  "common": {
+    "refresh": "Refresh",
+    "offline": "You are offline",
+    "staleData": "Offline — showing last known data"
+  },
+  "nav": {
+    "home": "Home",
+    "prayerTimes": "Prayer Times",
+    "weather": "Weather",
+    "currency": "Currency",
+    "sports": "Sports",
+    "settings": "Settings"
+  },
+  "location": {
+    "label": "Choose a location to continue",
+    "useGps": "Use My Location",
+    "cityPlaceholder": "Enter a city (e.g. Istanbul)",
+    "search": "Search"
+  },
+  "home": {
+    "comingSoon": "Coming soon",
+    "weather": "Weather",
+    "currency": "Currency",
+    "sports": "Sports",
+    "pharmacy": "On-Duty Pharmacy",
+    "prayerTimesCard": "Prayer Times"
+  },
+  "prayerTimes": {
+    "title": "Prayer Times",
+    "fajr": "Fajr",
+    "sunrise": "Sunrise",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "next": "Next prayer",
+    "error": "Could not fetch prayer times"
+  },
+  "weather": {
+    "title": "Weather",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "error": "Could not fetch weather",
+    "conditions": {
+      "clear": "Clear",
+      "partlyCloudy": "Partly Cloudy",
+      "cloudy": "Cloudy",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "snow": "Snow",
+      "showers": "Showers",
+      "thunderstorm": "Thunderstorm",
+      "unknown": "Unknown"
+    }
+  },
+  "currency": {
+    "title": "Exchange Rates",
+    "baseNote": "Turkish Lira value per unit",
+    "error": "Could not fetch exchange rates",
+    "alertLabel": "Notification threshold (₺)",
+    "alertSet": "Threshold set",
+    "codes": {
+      "USD": "US Dollar",
+      "EUR": "Euro",
+      "GBP": "British Pound"
+    }
+  },
+  "sports": {
+    "title": "Sports",
+    "teamPlaceholder": "Enter a team name (e.g. Galatasaray)",
+    "search": "Search",
+    "noTeam": "Choose your favorite team",
+    "lastMatch": "Last Match",
+    "nextMatch": "Next Match",
+    "noData": "No data found"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "language": "Language",
+    "updates": "Updates",
+    "checkForUpdates": "Check for Updates",
+    "updateAvailable": "New version available: {version}",
+    "install": "Install and Restart"
+  },
+  "notifications": {
+    "prayerTime": "It's time for {prayer}",
+    "currencyThreshold": "{code} crossed {threshold}₺ (now {rate}₺)",
+    "matchStarting": "{home} vs {away} is starting"
+  }
+}
